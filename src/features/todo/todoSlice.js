@@ -31,6 +31,7 @@ export const todoSlice = createSlice({
         if (ele.id === action.payload) {
             ele.isDone = true;
         }
+        return ele;
       });
     },
   },
